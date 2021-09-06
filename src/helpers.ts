@@ -17,3 +17,7 @@ export function listToArray (list?: string[] | string) {
   if (!list) return []
   return Array.isArray(list) ? list : list.split(', ')
 }
+export function listToString(list?: string[] | string) {
+  if (!list) return ''
+  return Array.isArray(list) ? list.join(', ') : list
+}
